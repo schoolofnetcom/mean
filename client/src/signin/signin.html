@@ -1,0 +1,26 @@
+<section class="col-xs-12 col-sm-6 col-xs-offset-3">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4>Signin</h4>
+        </div>
+        <div class="panel-body">
+            <form>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control" placeholder="Enter your email here" data-ng-model="form.email">
+                </div>
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" placeholder="Enter your password here" data-ng-model="form.password">
+                </div>
+
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary" data-ng-click="signin_vm.signin(form)">Sign in</button>
+                </div>
+                <div class="form-group text-center">
+                    <a href data-ng-click="signin_vm.openModal()">Create a new Account</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

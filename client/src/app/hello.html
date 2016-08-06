@@ -1,0 +1,32 @@
+<nav class="navbar navbar-default" data-ng-if="hello_vm.userIsLogged()">
+    <div class="container">
+        <a class="navbar-header">
+            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+
+            <a href class="navbar-brand"></a>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="">Home</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="" data-ng-click="hello_vm.openModal()">New Tweet</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="container">
+    <data-ui-view></data-ui-view>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row text-center">
+            <h5>&copy; Copyright School of net - Mini twitter</h5>
+        </div>
+    </div>
+</footer>

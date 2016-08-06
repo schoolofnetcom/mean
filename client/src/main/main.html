@@ -1,0 +1,15 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>Tweets</h4>
+    </div>
+
+    <div class="panel-body">
+        <div class="tweet" data-ng-repeat="tweet in main_vm.tweets">
+            <h5>{{tweet.user}}twetou:</h5>
+            <p data-ng-bind="tweet.tweet"></p>
+            <a href data-ng-click="main_vm.love(tweet)">I love this tweet</a>
+            <span data-ng-bind="tweet.love.total"></span>
+            <hr>
+        </div>
+    </div>
+</div>

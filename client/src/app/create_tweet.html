@@ -1,0 +1,14 @@
+<div class="modal-header">
+    <h4>Create a new Tweet</h4>
+</div>
+<div class="modal-body">
+    <form>
+        <div class="form-group">
+            <textarea class="form-control" data-ng-model="form.tweet" placeholder="Enter your tweet here" cols="10" rows="8"></textarea>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary" data-ng-click="create_tweet_vm.create(form)">Create</button>
+    <button type="button" class="btn btn-warning" data-ng-click="create_tweet_vm.cancel()">Cancel</button>
+</div>
